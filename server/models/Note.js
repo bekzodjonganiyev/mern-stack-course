@@ -26,10 +26,10 @@ const noteSchema = new mongoose.Schema(
   }
 );
 
-noteSchema.plugin(AutoIncrement, {
-    inc_filed: "ticket",
-    id: "ticketNums",
-    start_seq: 500
-})
+// noteSchema.plugin(AutoIncrement, {
+//     inc_filed: "ticket",
+//     id: "Number",
+//     start_seq: 500
+// })
 
-module.exports = mongoose.model("User", noteSchema);
+module.exports = mongoose.model("Note", noteSchema);
